@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "vblog-server",
+  "main": "start.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ailuyao/vblog"
+  },
+  "bugs": {
+    "url": "https://github.com/ailuyao/vblog/issues"
+  },
+  "homepage": "https://github.com/ailuyao/vblog",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon start.js",
+    "prod": "NODE_ENV=production node start.js",
+    "clean": "rm -rf node_modules/",
+    "pm2": "pm2 start pm2.json --env production"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "luyao",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "jsonwebtoken": "^8.3.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.2.2",
+    "pangu": "^3.3.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.17.5"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 4.0.0"
+  }
+}

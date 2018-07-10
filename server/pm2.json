@@ -1,0 +1,37 @@
+{
+  "apps": [
+    {
+      "name": "vblog-server",
+      "script": "./start.js",
+      "watch": [
+        "src"
+      ],
+      "ignore_watch": [
+        "node_modules",
+        "docs",
+        "public",
+        "logs"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "REMOTE_ADDR": "http://localhost:3010/"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "REMOTE_ADDR": "http://www.iluyao.xin/",
+        "PORT": 4000
+      },
+      "merge_logs": true,
+      "error_file": "./logs/app-err.log",
+      "out_file": "./logs/app-out.log",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "exec_mode": "cluster",
+      "instances": 2,
+      "max_memory_restart": "800M",
+      "autorestart": true,
+      "node_args": [
+        "--harmony"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+html {
+  font-size: 14px;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a:hover {
+  color: #42a5f5;
+}
+
+a:global(.underline) {
+  font-size: 90%;
+  border-bottom: 1px dashed #666;
+  position: relative;
+  top: -1px;
+  padding-bottom: 1px;
+  margin: 0 2px;
+}
+
+a.underline {
+  font-size: 90%;
+  border-bottom: 1px dashed #666;
+  position: relative;
+  top: -1px;
+  padding-bottom: 1px;
+  margin: 0 2px
+}
